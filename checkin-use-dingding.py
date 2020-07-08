@@ -18,7 +18,7 @@ def push2ding(token, title, content):
 
     r = requests.post(f"https://oapi.dingtalk.com/robot/send?access_token={token}", data=json.dumps(data),
                       headers=headers)
-    #print(r.text)
+    print(r.text)
 
 def start():    
     url= "https://glados.rocks/api/user/checkin"
@@ -37,6 +37,7 @@ def start():
             #requests.get('https://sc.ftqq.com/' + sckey + '.send?text='+mess+'，you have '+time+' days left')
             title = mess + 'checkin success'
             msg = mess + '，you have ' + time + ' days left'
+            print(msg)
             push2ding(token, title, msg)
     else:
         #requests.get('https://sc.ftqq.com/' + sckey + '.send?text=cookie过期')
