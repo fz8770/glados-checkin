@@ -13,7 +13,7 @@ def push2ding(token, title, content):
     headers = {"Content-Type": "application/json"}
     # 消息类型和数据格式参照钉钉开发文档
     # URL: https://ding-doc.dingtalk.com/doc#/serverapi2/qf2nxq
-    data = {"msgtype": "markdown", "markdown": {"title": f"xray_glados_{title}"}}
+    data = {"msgtype": "markdown", "markdown": {"title": f"glados_{title}"}}
     data['markdown']['text'] = content
 
     r = requests.post(f"https://oapi.dingtalk.com/robot/send?access_token={token}", data=json.dumps(data),
@@ -35,14 +35,22 @@ def start():
         print(time)
         if sever == 'on':
             #requests.get('https://sc.ftqq.com/' + sckey + '.send?text='+mess+'，you have '+time+' days left')
-            title = mess + 'checkin success'
-            msg = mess + '，you have ' + time + ' days left'
+            title = f"{mess} checkin success"
+            msg = f"""# {title}
+            
+            > {mess} ，you have {time} days left
+            
+            """
             print(msg)
             push2ding(token, title, msg)
     else:
         #requests.get('https://sc.ftqq.com/' + sckey + '.send?text=cookie过期')
-        title = 'cookie过期'
-        msg = 'error'
+        title = 'checkin error'
+        msg = f"""# {title} 
+        
+        > cookie过期
+        
+        """
         push2ding(token, title, msg)
 
 def main_handler(event, context):
