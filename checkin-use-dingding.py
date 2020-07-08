@@ -37,20 +37,20 @@ def start():
             #requests.get('https://sc.ftqq.com/' + sckey + '.send?text='+mess+'，you have '+time+' days left')
             title = f"{mess} checkin success"
             msg = f"""# {title}
-            
-            > {mess} ，you have {time} days left
-            
-            """
+
+> {mess} ，you have {time} days left
+
+"""
             print(msg)
             push2ding(token, title, msg)
     else:
         #requests.get('https://sc.ftqq.com/' + sckey + '.send?text=cookie过期')
         title = 'checkin error'
         msg = f"""# {title} 
-        
-        > cookie过期
-        
-        """
+
+> cookie过期
+
+"""
         push2ding(token, title, msg)
 
 def main_handler(event, context):
