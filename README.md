@@ -1,9 +1,9 @@
 # glados-checkin
-![glados-checkin](https://github.com/hbstarjason/glados-checkin/workflows/glados-checkin/badge.svg)
+![glados-checkin](https://github.com/j4ckzh0u/glados-checkin/workflows/glados-checkin/badge.svg)
 
 主要功能：
 
-1、通过Github Action运行[checkin.py](https://github.com/hbstarjason/glados-checkin/blob/master/checkin.py)脚本。
+1、通过Github Action运行[checkin.py](../glados-checkin/blob/master/checkin.py)脚本。
 
 2、通过cookies自动登录https://glados.rocks/console/checkin，并自动进行checkin。
 
@@ -17,6 +17,6 @@
 
 1、打开 https://github.com/glados-network/GLaDOS ，找到[Register](https://glados.rocks/)，填写邮箱进行登录。
 
-2、输入激活码`WTPGE-CZYW7-1O7PV-ZC6JY`，进行激活，获得3天试用。
+2、输入激活码`7S036-5XISE-QFAGM-RYSOP`，进行激活，获得3天试用。
 
 3、每天进行checkin一次，增加一天。
