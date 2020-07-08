@@ -9,6 +9,8 @@
 
 3、然后通过“Server酱”（http://sc.ftqq.com/3.version），自动发通知到微信上。
 
+4、 增加了钉钉推送，需要配置钉钉的token
+
 
 
 注册地址：
