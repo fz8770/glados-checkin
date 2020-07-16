@@ -29,6 +29,10 @@
 
 3、变量有3个"SERVER"/"TOKEN"/"COOKIE"
 
+> "SERVER" 为 "on" （开启消息推送）
+> "TOKEN" 为钉钉机器人token， 钉钉的关键字配置为 "checkin"
+> "COOKE" 为自己的COOKIE
+
 ![](../doc/github-action1.png)
 
 
