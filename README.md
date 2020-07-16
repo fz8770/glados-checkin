@@ -20,3 +20,5 @@
 2、输入激活码`7S036-5XISE-QFAGM-RYSOP`，进行激活，获得3天试用。
 
 3、每天进行checkin一次，增加一天。
+
+详细使用说明，请阅读[readme](doc/readme.md)
