@@ -1,6 +1,6 @@
 import requests,json,os
 
-# 钉钉开关，填off不开启(默认)，填on同时开启cookie失效通知和签到成功通知
+# 钉钉开关，填off不开启(默认)，填on同时开启cookie失效通知和签到成功通知123
 sever = os.environ["SERVER"]
 
 # 填写钉钉token,不开启则不用填
